@@ -1,0 +1,28 @@
+﻿<Window x:Class="Etlap.Felvetel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Etlap"
+        mc:Ignorable="d"
+        Title="Felvetel" Height="400" Width="400">
+    <Grid>
+		<TextBlock Text="Név" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,15,0,0"/>
+		<TextBox  x:Name="tbname" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,15,0,0" Width="320"/>
+
+		<TextBlock Text="Leírás" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,50,0,0"/>
+		<TextBox  x:Name="tbdesc" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,50,0,0" Width="320" Height="200"/>
+
+		<TextBlock Text="Kategória" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,270,0,0"/>
+		<ComboBox x:Name="cbcat" Width="300" Height="20" Margin="80,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+			<ComboBoxItem>Előétel</ComboBoxItem>
+			<ComboBoxItem IsSelected="True">Főétel</ComboBoxItem>
+			<ComboBoxItem>Desszert</ComboBoxItem>
+		</ComboBox>
+
+		<TextBlock Text="Ár" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,305,0,0"/>
+		<TextBox x:Name="tbprice" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,305,0,0" Width="320"/>
+
+		<Button x:Name="btnadd" Click="Add_Button" Content="Hozzáad" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,350,0,0" Width="360"/>
+	</Grid>
+</Window>
